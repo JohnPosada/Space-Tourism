@@ -1,3 +1,4 @@
+import Navbar from "@/components/ui/Navbar";
 import "./globals.css";
 import { Bellefair, Barlow_Condensed } from "next/font/google";
 
@@ -30,7 +31,9 @@ export default function RootLayout({
       lang="en"
       className={`${bellefair.variable} ${barlowCondensed.variable}`}
     >
-      <body className="bg-home-desktop">{children}</body>
+      <body className="h-screen w-screen">
+        <>{children}</>
+      </body>
     </html>
   );
 }
