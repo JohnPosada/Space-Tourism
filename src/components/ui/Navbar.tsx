@@ -10,7 +10,7 @@ const Navbar = () => {
   const pathname = path === "/" ? "HOME" : path.split("/")[1].toUpperCase();
 
   return (
-    <div className="flex justify-between items-center  h-24  ml-14">
+    <div className="max-sm:hidden flex justify-between items-center  h-24  ml-14">
       <Image
         src="/assets/shared/logo.svg"
         alt="Logo"

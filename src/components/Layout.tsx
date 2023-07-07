@@ -3,16 +3,16 @@ import React from "react";
 import Navbar from "./ui/Navbar";
 
 interface Props {
-  section: "home" | "destination" | "crew" | "tecnology";
+  section: "home" | "destination" | "crew" | "technology";
   children: React.ReactNode;
 }
 
 const Layout = ({ section, children }: Props) => {
   const bgStyles = {
-    home: "bg-home-mobile sm:bg-home-desktop",
-    destination: "bg-destination-mobile sm:bg-destination-desktop",
-    crew: "bg-crew-mobile sm:bg-crew-desktop",
-    tecnology: "bg-tecnology-mobile sm:bg-tecnology-desktop",
+    home: "max-sm:bg-home-mobile bg-home-desktop",
+    destination: "max-sm:bg-destination-mobile sm:bg-destination-desktop",
+    crew: "max-sm:bg-crew-mobile sm:bg-crew-desktop",
+    technology: "max-sm:bg-technology-mobile sm:bg-technology-desktop",
   };
   return (
     <div

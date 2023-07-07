@@ -13,12 +13,14 @@ const DestinationDescription = ({
   distance,
   travel,
 }: Props) => {
-  console.log(name, description, distance, travel);
-
   return (
-    <div className="text-tertiary flex flex-col">
-      <h1 className="text-8xl font-sans mt-9">{name.toUpperCase()}</h1>
-      <p className="w-96 font-serif text-lg mt-3">{description}</p>
+    <div className="text-tertiary flex flex-col max-sm:items-center">
+      <h1 className="text-8xl font-sans mt-9 max-sm:text-7xl">
+        {name.toUpperCase()}
+      </h1>
+      <p className="w-96 text-secondary font-serif text-lg mt-3 max-sm:text-center max-sm:w-auto">
+        {description}
+      </p>
       <hr className="text-tertiary opacity-60 mt-14" />
       <div className="flex gap-20 mt-7">
         <div className="flex flex-col gap-2">

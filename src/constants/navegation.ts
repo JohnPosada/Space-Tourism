@@ -17,7 +17,7 @@ export const barItems = [
   {
     name: "TECHNOLOGY",
     number: "03",
-    href: "/technology",
+    href: "/technology/1",
   },
 ];
 

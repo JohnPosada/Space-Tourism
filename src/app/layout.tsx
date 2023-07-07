@@ -31,7 +31,7 @@ export default function RootLayout({
       lang="en"
       className={`${bellefair.variable} ${barlowCondensed.variable}`}
     >
-      <body className="h-screen w-screen">
+      <body className="h-screen w-screen ">
         <>{children}</>
       </body>
     </html>
