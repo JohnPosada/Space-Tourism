@@ -23,7 +23,7 @@ const Technology = ({ params }: Props) => {
         <TitleSection number="03" title="MEET YOUR TECHNOLOGY" />
       </div>
       <div className="h-full w-full flex max-sm:flex-col-reverse max-sm:justify-center max-sm:items-center max-sm:gap-7">
-        <div className="w-3/5 pl-40 pt-20 flex gap-16 max-sm:w-full max-sm:flex-col max-sm:p-0 max-sm:justify-center max-sm:items-center">
+        <div className="w-3/5 pl-40 pt-20 flex gap-16 max-sm:w-full max-sm:gap-3 max-sm:flex-col max-sm:p-0 max-sm:justify-center max-sm:items-center">
           <TechnologySlide />
           <TechnologyDescription {...activeTechnology} />
         </div>

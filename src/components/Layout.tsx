@@ -1,6 +1,7 @@
 import { clsx } from "clsx";
 import React from "react";
 import Navbar from "./ui/Navbar";
+import NavbarMobile from "./ui/NavbarMobile";
 
 interface Props {
   section: "home" | "destination" | "crew" | "technology";
@@ -16,9 +17,13 @@ const Layout = ({ section, children }: Props) => {
   };
   return (
     <div
-      className={clsx("bg-cover h-full pt-10 flex flex-col", bgStyles[section])}
+      className={clsx(
+        "bg-cover h-full pt-10 flex flex-col max-sm:p-0",
+        bgStyles[section]
+      )}
     >
       <Navbar />
+      <NavbarMobile />
       {children}
     </div>
   );
