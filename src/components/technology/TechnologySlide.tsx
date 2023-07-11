@@ -9,7 +9,7 @@ const TechnologySlide = () => {
   const id = path.split("/")[2];
 
   return (
-    <div className="flex flex-col gap-6 max-sm:flex-row">
+    <div className="flex flex-col gap-6 max-lg:flex-row">
       {["1", "2", "3"].map((item) =>
         id === item ? (
           <NumberSlideItem key={item} number={item} active />

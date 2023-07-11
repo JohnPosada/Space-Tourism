@@ -21,10 +21,12 @@ const Destination = ({ params }: Props) => {
 
   return (
     <Layout section="destination">
-      <div className="h-full w-full grid grid-cols-2 grid-rows-5 place-items-center max-sm:flex max-sm:flex-col">
-        <div className="flex flex-col items-center row-span-full gap-24 max-sm:gap-8">
-          <TitleSection number="00" title="PICK YOUR DESTINATION" />
-          <div className="w-[300px] h-[300px] ml-72 max-sm:ml-0 max-sm:w-44 max-sm:h-44">
+      <div className="pl-40 pt-20 max-lg:pt-9 max-lg:pl-9 max-lg:justify-start max-lg:flex max-sm:p-0 max-sm:items-center max-sm:justify-center">
+        <TitleSection number="01" title="PICK YOUR DESTINATION" />
+      </div>
+      <div className="h-full w-full pt-12 flex max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:pt-4 max-sm:gap-3 max-lg:gap-9">
+        <div className="w-1/2 h-full flex justify-end items-center pb-10 max-lg:justify-center max-sm:p-0 max-lg:h-auto">
+          <div className="w-[445px] h-[445px]  max-lg:ml-0 max-lg:w-[300px] max-lg:h-[300px] max-sm:w-44 max-sm:h-44">
             <Image
               className="w-full h-full"
               src={activeDestination?.images.png}
@@ -35,7 +37,7 @@ const Destination = ({ params }: Props) => {
             />
           </div>
         </div>
-        <div className="row-span-full max-sm:p-5">
+        <div className="flex flex-col justify-start pl-16 h-full w-1/2 max-lg:w-full max-lg:px-24 max-sm:px-5">
           <DestinationNavBar />
           <DestinationDescription {...activeDestination} />
         </div>

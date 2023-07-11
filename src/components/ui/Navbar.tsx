@@ -18,8 +18,8 @@ const Navbar = () => {
         height={48}
         priority
       />
-      <hr className="relative w-1/3 left-10 opacity-50" />
-      <div className="flex bg-slate-100 bg-opacity-10 backdrop-blur-sm justify-center items-center gap-12 w-[830px] h-full">
+      <hr className="max-lg:hidden relative w-1/3 left-10 opacity-50" />
+      <div className="flex h-full bg-slate-100 bg-opacity-10 backdrop-blur-sm justify-center items-center gap-12 w-[830px] max-lg:w-[450px] max-lg:gap-9  ">
         {barItems.map((item) =>
           pathname === item.name ? (
             <NavbarItem

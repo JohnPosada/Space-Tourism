@@ -10,7 +10,7 @@ const NavbarMobile = () => {
 
   return (
     <>
-      <div className="lg:hidden w-full p-6 flex justify-between items-center ">
+      <div className="sm:hidden w-full p-6 flex justify-between items-center ">
         <Image
           src="/assets/shared/logo.svg"
           alt="Logo"

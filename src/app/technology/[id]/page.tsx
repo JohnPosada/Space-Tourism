@@ -19,16 +19,16 @@ const Technology = ({ params }: Props) => {
 
   return (
     <Layout section="technology">
-      <div className="pl-40 pt-20 max-sm:flex max-sm:p-0 max-sm:items-center max-sm:justify-center">
-        <TitleSection number="03" title="MEET YOUR TECHNOLOGY" />
+      <div className="pl-40 pt-20 max-lg:pt-9 max-lg:pl-9 max-lg:justify-start max-lg:flex max-sm:p-0 max-sm:items-center max-sm:justify-center">
+        <TitleSection number="03" title="SPACE LAUNCH 101" />
       </div>
-      <div className="h-full w-full flex max-sm:flex-col-reverse max-sm:justify-center max-sm:items-center max-sm:gap-7">
-        <div className="w-3/5 pl-40 pt-20 flex gap-16 max-sm:w-full max-sm:gap-3 max-sm:flex-col max-sm:p-0 max-sm:justify-center max-sm:items-center">
+      <div className="h-full w-full flex max-lg:flex-col-reverse max-lg:justify-center max-lg:items-center max-sm:gap-7 max-lg:gap-9">
+        <div className="w-3/5 pl-40 pt-20 flex gap-16 max-lg:w-full max-lg:gap-7 max-sm:gap-3 max-lg:flex-col max-lg:p-0 max-lg:justify-center max-lg:items-center">
           <TechnologySlide />
           <TechnologyDescription {...activeTechnology} />
         </div>
-        <div className="w-2/5 flex justify-end items-center max-sm:items-center max-sm:h-auto max-sm:w-full ">
-          <div className="w-auto h-[515px] max-sm:w-full max-sm:h-44">
+        <div className="w-2/5 flex justify-end items-center max-sm:items-center max-sm:h-auto max-lg:w-full ">
+          <div className="w-auto h-[515px] max-sm:w-full max-lg:h-80 max-sm:h-44">
             <Image
               className="w-full h-full"
               src={activeTechnology?.images.landscape}

@@ -16,7 +16,7 @@ const NavbarItem = ({ href, number, name, active }: NavbarItemProps) => {
         }`}
         href={href}
       >
-        <span className="text-base font-serif tracking-[2px] font-bold max-sm:text-sm text-tertiary">
+        <span className="text-base font-serif tracking-[2px] font-bold max-sm:text-sm text-tertiary max-lg:hidden">
           {number}
         </span>
         <span className="text-base font-serif tracking-[2px] text-tertiary">

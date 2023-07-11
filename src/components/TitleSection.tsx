@@ -7,8 +7,8 @@ interface Props {
 
 const TitleSection = ({ title, number }: Props) => {
   return (
-    <div className="flex justify-start items-center gap-7 mt-4 text-white font-serif text-3xl max-sm:text-lg">
-      <h2 className="font-bold opacity-50">{number}</h2>
+    <div className="flex justify-start items-center gap-7 mt-4 text-white font-serif text-3xl max-sm:text-xl ">
+      <h2 className="text-gray-500">{number}</h2>
       <h2>{title}</h2>
     </div>
   );
